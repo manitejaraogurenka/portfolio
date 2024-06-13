@@ -156,14 +156,16 @@ const Home = () => {
         data-aos-delay="500"
       >
         <video
-          src={Pose}
-          className={`absolute top-5 left-0 right-0 bottom-0 w-screen h-screen object-bottom ${
-            isSmallScreen ? "object-contain" : "object-cover"
-          }`}
           autoPlay
           muted
           loop
-        />
+          playsInline
+          className={`absolute top-5 left-0 right-0 bottom-0 w-screen h-screen object-bottom ${
+            isSmallScreen ? "object-contain" : "object-cover"
+          }`}
+        >
+          <source src={Pose} type="video/mp4" />
+        </video>
         <div className="bottom-0 absolute bg-gradient-to-t from-black w-full h-[70%] shadow-lg shadow-black"></div>
       </div>
       <div
