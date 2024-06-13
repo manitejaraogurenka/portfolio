@@ -25,9 +25,10 @@ import { useSelector } from "react-redux";
 
 import Social_profile from "../public/Social_profile.png";
 import Pose from "../public/Video/Pose.mp4";
+import My_audio from "../public/Audio/My_name_is_maniteja_Gurenka.mp3";
 
 const Home = () => {
-  const audio = new Audio("/Audio/My_name_is_maniteja_Gurenka.mp3");
+  const audio = new Audio(My_audio);
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const { lang } = useSelector((state) => state.language);
@@ -49,6 +50,7 @@ const Home = () => {
     link.href =
       "https://drive.google.com/file/d/1hZvwEKnFsStK5SdXA3gG5PJGQ55fLxKT/view?usp=drive_link";
     link.download = "Resume_Maniteja_Gurenka.pdf";
+    link.target = "_blank";
     link.click();
   };
 
@@ -164,7 +166,10 @@ const Home = () => {
             isSmallScreen ? "object-contain" : "object-cover"
           }`}
         >
-          <source src={Pose} type="video/mp4" />
+          <source
+            src="https://github.com/manitejaraogurenka/portfolio/raw/main/src/public/Video/Pose.mp4"
+            type="video/mp4"
+          />
         </video>
         <div className="bottom-0 absolute bg-gradient-to-t from-black w-full h-[70%] shadow-lg shadow-black"></div>
       </div>
