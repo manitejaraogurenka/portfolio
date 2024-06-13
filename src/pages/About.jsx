@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { TypeAnimation } from "react-type-animation";
 import { tranabout, traniam } from "../utils/translateText";
+import About_me from "../public/About_me.png";
+import AboutImg from "../public/About.png";
 
 const About = () => {
   const { selected } = useSelector((state) => state.navbar);
@@ -22,7 +24,7 @@ const About = () => {
           <span className="relative flex flex-col w-screen h-screen left-4 mt-[8rem]">
             <img
               draggable={false}
-              src="../public/About_me.png"
+              src={About_me}
               className="w-fit max-h-[180px] object-cover self-center mr-20"
               alt="About me"
             />
@@ -63,7 +65,7 @@ const About = () => {
           <span className="relative w-screen h-[700px] left-4">
             <img
               draggable={false}
-              src="../public/About.png"
+              src={AboutImg}
               className="w-fit max-h-full object-cover"
               alt="About"
             />

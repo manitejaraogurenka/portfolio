@@ -98,7 +98,7 @@ export const tranhire = (lang) => {
     case "Hindi":
       return "मुझे चुनिएँ";
     default:
-      return "Resume";
+      return "Hire me";
   }
 };
 

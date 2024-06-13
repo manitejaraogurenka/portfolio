@@ -7,6 +7,7 @@ import CircularMenu from "./CircularMenu";
 import { IoLanguageSharp } from "react-icons/io5";
 import LanguageModal from "./LanguageModal.jsx";
 import { trannav } from "../utils/translateText.js";
+import Logo from "../public/Logo.png";
 
 const Navbar = () => {
   const { selected } = useSelector((state) => state.navbar);
@@ -56,7 +57,7 @@ const Navbar = () => {
           data-aos-once="true"
         >
           <div className="font-Orbitron w-9 flex items-center text-3xl font-bold gap-1">
-            <img src="../public/Logo.png" className="border-2 rounded-full" />
+            <img src={Logo} className="border-2 rounded-full" />
             <div className={styles.environment}></div>
             <h2
               className={`${styles.hero} ${styles.glitch} ${styles.layers} bg-opacity-0 bg-white bg-blur-lg backdrop-blur-md rounded-md`}

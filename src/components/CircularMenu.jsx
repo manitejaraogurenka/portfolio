@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { navbarActions } from "../store/navbarSlice";
 import { tranmenu } from "../utils/translateText";
 
+import Logo from "../public/Logo.png";
+
 const CircularMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,11 +35,7 @@ const CircularMenu = () => {
     <>
       <div className="absolute top-4 left-4 z-50 select-none">
         <div className="font-Orbitron w-9 flex items-center text-3xl font-bold gap-1">
-          <img
-            src="../public/Logo.png"
-            className="border-2 rounded-full"
-            alt="Logo"
-          />
+          <img src={Logo} className="border-2 rounded-full" alt="Logo" />
           <div className={`${styles.environment}`}></div>
           <h2
             className={`${styles.hero} ${styles.glitch} ${styles.layers} bg-opacity-0 bg-white bg-blur-lg backdrop-blur-md rounded-md`}

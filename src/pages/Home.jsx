@@ -23,6 +23,9 @@ import {
 } from "../utils/translateText";
 import { useSelector } from "react-redux";
 
+import Social_profile from "../public/Social_profile.png";
+import Pose from "../public/Video/Pose.mp4";
+
 const Home = () => {
   const audio = new Audio("/Audio/My_name_is_maniteja_Gurenka.mp3");
 
@@ -152,7 +155,7 @@ const Home = () => {
         data-aos-delay="500"
       >
         <video
-          src="../public/Video/Pose.mp4"
+          src={Pose}
           className={`absolute top-5 left-0 right-0 bottom-0 w-screen h-screen object-bottom ${
             isSmallScreen ? "object-contain" : "object-cover"
           }`}
@@ -174,7 +177,7 @@ const Home = () => {
             <img
               className="WheelImage border-8 rounded-full"
               alt="Profile"
-              src="../public/Social_profile.png"
+              src={Social_profile}
             />
             <ol className="WheelList">
               <li className="WheelItem shadow-lg shadow-white">
