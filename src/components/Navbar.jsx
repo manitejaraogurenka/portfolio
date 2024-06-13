@@ -71,7 +71,7 @@ const Navbar = () => {
               <Link
                 key={item}
                 smooth
-                to={`/#${menu[index].toLowerCase()}`}
+                to={`/portfolio/#${menu[index].toLowerCase()}`}
                 onClick={() => selectedItem(item)}
               >
                 <li

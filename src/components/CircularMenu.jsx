@@ -20,15 +20,31 @@ const CircularMenu = () => {
   };
 
   const menuItems = [
-    { name: tranmenu(lang)[0], link: "/#contact", circleClass: "circle-one" },
+    {
+      name: tranmenu(lang)[0],
+      link: "/portfolio/#contact",
+      circleClass: "circle-one",
+    },
     {
       name: tranmenu(lang)[1],
-      link: "/#portfolio",
+      link: "/portfolio/#portfolio",
       circleClass: "circle-four",
     },
-    { name: tranmenu(lang)[2], link: "/#skills", circleClass: "circle-two" },
-    { name: tranmenu(lang)[3], link: "/#about", circleClass: "circle-three" },
-    { name: tranmenu(lang)[4], link: "/#home", circleClass: "circle-five" },
+    {
+      name: tranmenu(lang)[2],
+      link: "/portfolio/#skills",
+      circleClass: "circle-two",
+    },
+    {
+      name: tranmenu(lang)[3],
+      link: "/portfolio/#about",
+      circleClass: "circle-three",
+    },
+    {
+      name: tranmenu(lang)[4],
+      link: "/portfolio/#home",
+      circleClass: "circle-five",
+    },
   ];
 
   return (

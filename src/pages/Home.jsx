@@ -85,7 +85,7 @@ const Home = () => {
             <GrDocumentDownload />
             {trandoc(lang)}
           </button>
-          <Link smooth to="/#about">
+          <Link smooth to="/portfolio/#about">
             <button className="resume-btn inline-flex gap-1 items-center px-2 py-1 rounded-3xl active:scale-105">
               <TbHeartHandshake size={20} />
               {tranhire(lang)}
