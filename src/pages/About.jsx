@@ -22,7 +22,7 @@ const About = () => {
           <span className="relative flex flex-col w-screen h-screen left-4 mt-[8rem]">
             <img
               draggable={false}
-              src="/About me.png"
+              src="../public/About_me.png"
               className="w-fit max-h-[180px] object-cover self-center mr-20"
               alt="About me"
             />
@@ -63,7 +63,7 @@ const About = () => {
           <span className="relative w-screen h-[700px] left-4">
             <img
               draggable={false}
-              src="/About.png"
+              src="../public/About.png"
               className="w-fit max-h-full object-cover"
               alt="About"
             />

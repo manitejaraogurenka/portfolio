@@ -43,7 +43,7 @@ const Home = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Resume Maniteja Gurenka.docx";
+    link.href = "../public/Resume_Maniteja_Gurenka.pdf";
     link.download = "Resume Maniteja Gurenka.docx";
     link.click();
   };
@@ -152,7 +152,7 @@ const Home = () => {
         data-aos-delay="500"
       >
         <video
-          src="/Video/Pose.mp4"
+          src="../public/Video/Pose.mp4"
           className={`absolute top-5 left-0 right-0 bottom-0 w-screen h-screen object-bottom ${
             isSmallScreen ? "object-contain" : "object-cover"
           }`}
@@ -174,7 +174,7 @@ const Home = () => {
             <img
               className="WheelImage border-8 rounded-full"
               alt="Profile"
-              src="/Social_profile.png"
+              src="../public/Social_profile.png"
             />
             <ol className="WheelList">
               <li className="WheelItem shadow-lg shadow-white">

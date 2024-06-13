@@ -34,7 +34,7 @@ const CircularMenu = () => {
       <div className="absolute top-4 left-4 z-50 select-none">
         <div className="font-Orbitron w-9 flex items-center text-3xl font-bold gap-1">
           <img
-            src="../../public/Logo.png"
+            src="../public/Logo.png"
             className="border-2 rounded-full"
             alt="Logo"
           />
