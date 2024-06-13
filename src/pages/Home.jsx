@@ -25,7 +25,7 @@ import { useSelector } from "react-redux";
 
 import Social_profile from "../public/Social_profile.png";
 import Pose from "../public/Video/Pose.mp4";
-import Resume from "../public/Resume_Maniteja_Gurenka.pdf";
+import Resume_Maniteja_Gurenka from "../public/Resume_Maniteja_Gurenka.pdf";
 
 const Home = () => {
   const audio = new Audio("/Audio/My_name_is_maniteja_Gurenka.mp3");
@@ -47,8 +47,8 @@ const Home = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = { Resume };
-    link.download = "Resume Maniteja Gurenka.pdf";
+    link.href = { Resume_Maniteja_Gurenka };
+    link.download = "Resume_Maniteja_Gurenka.pdf";
     link.click();
   };
 
