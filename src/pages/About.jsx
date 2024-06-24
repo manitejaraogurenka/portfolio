@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { TypeAnimation } from "react-type-animation";
 import { tranabout, traniam } from "../utils/translateText";
-import About_me from "../public/About_me.png";
-import AboutImg from "../public/About.png";
+import About_me from "../About_me.png";
+import AboutImg from "../About.png";
 
 const About = () => {
   const { selected } = useSelector((state) => state.navbar);

@@ -23,9 +23,9 @@ import {
 } from "../utils/translateText";
 import { useSelector } from "react-redux";
 
-import Social_profile from "../public/Social_profile.png";
-import Pose from "../public/Video/Pose.mp4";
-import My_audio from "../public/Audio/My_name_is_maniteja_Gurenka.mp3";
+import Social_profile from "../Social_profile.png";
+import Pose from "../Pose.mp4";
+import My_audio from "../My_name_is_maniteja_Gurenka.mp3";
 
 const Home = () => {
   const audio = new Audio(My_audio);
@@ -166,10 +166,7 @@ const Home = () => {
             isSmallScreen ? "object-contain" : "object-cover"
           }`}
         >
-          <source
-            src="https://github.com/manitejaraogurenka/portfolio/raw/main/src/public/Video/Pose.mp4"
-            type="video/mp4"
-          />
+          <source src={Pose} type="video/mp4" />
         </video>
         <div className="bottom-0 absolute bg-gradient-to-t from-black w-full h-[70%] shadow-lg shadow-black"></div>
       </div>

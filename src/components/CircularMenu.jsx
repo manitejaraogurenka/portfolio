@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { navbarActions } from "../store/navbarSlice";
 import { tranmenu } from "../utils/translateText";
 
-import Logo from "../public/Logo.png";
+import Logo from "../Logo.png";
 
 const CircularMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import under_construction from "../public/under_construction.jpg";
+import under_construction from "../under_construction.jpg";
 
 const Skills = () => {
   return (

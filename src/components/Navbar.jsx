@@ -7,7 +7,7 @@ import CircularMenu from "./CircularMenu";
 import { IoLanguageSharp } from "react-icons/io5";
 import LanguageModal from "./LanguageModal.jsx";
 import { trannav } from "../utils/translateText.js";
-import Logo from "../public/Logo.png";
+import Logo from "../Logo.png";
 
 const Navbar = () => {
   const { selected } = useSelector((state) => state.navbar);
